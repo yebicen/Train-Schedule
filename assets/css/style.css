@@ -1,0 +1,11 @@
+.panel-body a {
+    word-break: break-all;
+  }
+
+  p{
+      text-align: center;
+  }
+
+  .articleHeadline {
+    line-height: 1.5;
+}
