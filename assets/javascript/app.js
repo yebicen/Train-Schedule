@@ -144,6 +144,8 @@ console.log("next arrival is : " + nextarrivalFormatted);
   // }
 //end of update function
 
+// myRef.currenttime.equalTo(currenttime).update()
+
 
 
 // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
@@ -163,14 +165,15 @@ $('#train-table').append("<tr class='table-row' id=" + "'" + childSnapshot.key +
              "</td>" +
              // lastly add a remove button
         "</tr>"); 
-        $("body").on("click", "#remove", function(){
-          dataRef = firebase.database();
-          console.log(this) 
-          $(this).closest ('tr').remove();
-           thiskey = $(this).parent().parent().attr('id');
-           console.log(thiskey);
-           console.log(dataRef.ref().child(thiskey));
-          //  dataRef.child(key).remove();
+
+$("body").on("click", "#remove", function(){
+dataRef = firebase.database();
+console.log(this) 
+$(this).closest ('tr').remove();
+thiskey = $(this).parent().parent().attr('id');
+console.log(thiskey);
+
+ dataRef.ref().child(thiskey).remove();
         });
 // Handle the errors
 }, function(errorObject){
