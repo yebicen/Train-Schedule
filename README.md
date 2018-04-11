@@ -29,10 +29,10 @@ $(this).closest ('tr').remove();
 
 - I was able to log the correct key by onlick the remove button, using the child/parent method of firebase, see line 171-172 as below:
 thiskey = $(this).parent().parent().attr('id');
-console.log(thiskey);
 
-However, it doesn't work when I was trying to remove the data of the onlick line, by using   dataRef.child(key).remove();
-
+- I am removing the data node from the database by code on line 176:
+dataRef.ref().child(thiskey).remove();
+});
 
 - I was also trying to update the real time timer using fire base update method from line 120-145 and timer interval from line 53-69. But it doesn't quite work out, so I comment them out.
 
