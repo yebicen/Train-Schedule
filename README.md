@@ -1,5 +1,8 @@
 # Train-Schedule
-Week 7 Homework
+https://yebicen.github.io/Train-Schedule/
+
+
+
 BASIC:
 
 - First I created a public firebase DB at https://train-project-9468b.firebaseio.com, and checking back and forth the realtime DB.
