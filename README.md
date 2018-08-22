@@ -25,7 +25,7 @@ nextarrivalFormatted= tConvert(moment(nextarrival).format("hh:mm")); //returns a
 - Then I use push and append child to save the data in firebase, and dynamically generate table elements from the childSnapshot
 
 
-BONUS:
+ADVANCED:
 - Line 156 to Line 165, I created a remove button at the same time with the table elements, under the same userID.
 I was able to remove the specified table content from the DOM by code line 170:
 $(this).closest ('tr').remove();
