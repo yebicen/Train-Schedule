@@ -1,4 +1,5 @@
-http://g.recordit.co/EMsEBI7ruG.gif
+![Alt Text](http://g.recordit.co/EMsEBI7ruG.gif)
+
 
 
 # Train-Schedule
