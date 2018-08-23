@@ -1,3 +1,6 @@
+http://g.recordit.co/EMsEBI7ruG.gif
+
+
 # Train-Schedule
 https://yebicen.github.io/Train-Schedule/
 
